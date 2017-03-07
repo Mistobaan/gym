@@ -281,6 +281,12 @@ add_task(
     summary='Hex played on a 9x9 board.',
 )
 
+add_task(
+    id='TicTacToe3x3-v0',
+    group='board_game',
+    summary='TicTacToe played on a 3x3 board.',
+)
+
 
 # box2d
 

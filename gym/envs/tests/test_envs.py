@@ -22,7 +22,7 @@ def test_env(spec):
     observation, reward, done, _info = env.step(a)
     assert ob_space.contains(observation), 'Step observation: {!r} not in space'.format(observation)
     assert np.isscalar(reward), "{} is not a scalar for {}".format(reward, env)
-    assert isinstance(done, bool), "Expected {} to be a boolean".format(done)
+    assert isinstance(done, bool), "Expected {} to be a boolean got {}".format(done, type(done))
 
     for mode in env.metadata.get('render.modes', []):
         env.render(mode=mode)

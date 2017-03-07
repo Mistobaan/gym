@@ -390,6 +390,18 @@ register(
     },
 )
 
+register(
+    id='TicTacToe3x3-v0',
+    entry_point='gym.envs.board_game:TicTacToeEnv',
+    kwargs={
+        'player_symbol': 'X',
+        'opponent': 'random',
+        'observation_type': 'numpy3c',
+        'illegal_move_mode': 'lose',
+        'seed': 1234,
+    },
+)
+
 # Debugging
 # ----------------------------------------
 
